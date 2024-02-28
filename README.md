@@ -1,7 +1,7 @@
 
 # Learning Materials
 
-Learning Materials for TBC Developers
+Learning Materials for TBC/BSV Developers
 
 
 ## General 
@@ -29,11 +29,23 @@ Learning Materials for TBC Developers
   - By Wenshuai
 
 
+
 ## Dev Technology
 
 - [ TXID_New_Hash_Proposal (2021-2024) ](TXID_New_Hash_Proposal/TXID_New_Hash_Proposal.md)
   - By Wenshuai
 
+- [ How to Write Bitcoin Smart Contracts](https://docs.scrypt.io)
+  - [简介](https://www.bilibili.com/video/BV18L4y1u7Qd?spm_id_from=333.999.0.0) 
+<!--
+  - [基础](https://scryptdoc.readthedocs.io/en/latest/)
+  - [sCrypt Academy](https://learn.scrypt.io/)
+  - [awesome-scrypt](https://github.com/sCrypt-Inc/awesome-scrypt/)
+  - [xiaohuiliu.medium.com](https://xiaohuiliu.medium.com/)
+  - [space.bilibili.com/1294122227](https://space.bilibili.com/1294122227)
+  - [www.youtube.com/channel](https://www.youtube.com/channel/UCzQsmR836zW8b1kh03Ht04w)
+  - [blog.csdn.net](https://blog.csdn.net/freedomhero)
+-->
 
 ## Comments
 
