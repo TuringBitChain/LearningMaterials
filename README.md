@@ -43,7 +43,9 @@ Learning Materials for TBC/BSV Developers
 -->
 
 - [ Stratum V2 or Header-only Mining are the necessary protocol for generating blocks of TBC](https://stratumprotocol.org)
-
+<!--
+  - [ braiins-pool ](https://zh.braiins.com/pool?utm_source=BraiinsAcademy)
+-->
 
 ## Comments
 
