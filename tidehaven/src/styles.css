@@ -63,6 +63,13 @@ main {
   gap: 20px;
 }
 
+.top > *,
+.layout > *,
+.board-wrap,
+.panel {
+  min-width: 0;
+}
+
 .top {
   grid-template-columns: 1.4fr 0.8fr;
   align-items: end;
@@ -116,6 +123,7 @@ h2 {
   justify-content: space-between;
   gap: 12px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .status-row { margin-bottom: 12px; }
@@ -124,12 +132,14 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
 }
 
 .cell {
   aspect-ratio: 1;
+  min-width: 0;
   border-radius: 14px;
   border: 1px solid rgba(215, 239, 232, 0.18);
   background:
@@ -144,9 +154,10 @@ h2 {
   gap: 4px;
   font: inherit;
   padding: 4px;
+  overflow: hidden;
 }
 
-.cell strong { font-size: 13px; font-weight: 600; }
+.cell strong { font-size: clamp(11px, 2.5vw, 13px); font-weight: 600; }
 .cell span { font-size: 11px; color: var(--muted); }
 
 .cell.built {
