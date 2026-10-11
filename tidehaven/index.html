@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>潮屿 Tidehaven</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="sea-bg" aria-hidden="true"></div>
+    <main>
+      <header class="top">
+        <div>
+          <p class="eyebrow">TBC 链游切片</p>
+          <h1>潮屿</h1>
+          <p class="lede">
+            陆地没了。从一块木筏开始捞漂流物、把浮岛向外铺、养活上面的人。玩法在本地跑，物资和浮岛快照记在图灵比特链上。
+          </p>
+        </div>
+        <div class="wallet-card">
+          <button id="connect" type="button">连接钱包</button>
+          <p id="address">未连接。没有钱包也能先在本地把岛建起来。</p>
+        </div>
+      </header>
+
+      <section class="layout">
+        <div class="board-wrap">
+          <div class="status-row">
+            <p id="status"></p>
+            <button id="reset" type="button" class="ghost">另起一块木筏</button>
+          </div>
+          <div id="grid" class="grid" role="grid" aria-label="浮岛"></div>
+        </div>
+        <aside class="panel">
+          <h2>仓里</h2>
+          <ul id="resources" class="resources"></ul>
+          <div class="actions">
+            <button id="salvage" type="button" class="primary">出海拾荒</button>
+            <button id="forward" type="button">快进 20 秒</button>
+          </div>
+          <h2>往外盖</h2>
+          <div id="palette" class="palette"></div>
+          <p id="hint" class="hint">先点一种建筑，再点挨着木筏的空海面。</p>
+        </aside>
+      </section>
+
+      <section class="chain panel">
+        <div class="chain-head">
+          <h2>记到链上</h2>
+          <p>
+            拾荒和生产先记在这台浏览器里。TBC 的 FT 在发行时一次铸完，不能按每一网再增发，所以建造花费是从已铸造的余额转到金库；浮岛 NFT 记下当时的存档，写上链就不能改。
+          </p>
+        </div>
+        <label class="field">
+          金库地址
+          <input id="sink" type="text" autocomplete="off" spellcheck="false" placeholder="接收建造花费的 TBC 地址" />
+        </label>
+        <label class="check">
+          <input id="sync" type="checkbox" />
+          建造时把木板、金属、塑料、绳索的花费转到金库
+        </label>
+        <div class="actions wrap">
+          <button id="mint" type="button">发行四种物资</button>
+          <button id="collection" type="button">创建浮岛合集</button>
+          <button id="island" type="button">铸造浮岛快照</button>
+          <button id="sign" type="button">签署存档</button>
+        </div>
+        <dl id="contracts" class="contracts"></dl>
+      </section>
+
+      <section class="panel log-panel">
+        <h2>航海日志</h2>
+        <ol id="log" aria-live="polite"></ol>
+      </section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

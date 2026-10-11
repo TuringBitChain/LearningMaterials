@@ -50,5 +50,9 @@ Learning Materials for TBC Developers
   - [ braiins-pool ](https://zh.braiins.com/pool?utm_source=BraiinsAcademy)
 -->
 
+## Samples
+
+- [潮屿 Tidehaven](tidehaven/README.md) — 参考海上浮岛经营的 TBC 链游切片：本地拾荒建造，物资用 FT，浮岛快照用 NFT
+
 ## Comments
 

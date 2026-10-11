@@ -1,0 +1,10 @@
+{
+  "name": "tidehaven",
+  "private": true,
+  "type": "module",
+  "description": "潮屿：参考海上浮岛经营的 TBC 链游切片",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "python3 -m http.server 4173"
+  }
+}
